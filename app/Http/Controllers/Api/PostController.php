@@ -10,9 +10,6 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
         $request->validate([
@@ -34,9 +31,6 @@ class PostController extends Controller
         }
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show($id)
     {
         try {
@@ -56,9 +50,6 @@ class PostController extends Controller
         }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy($id)
     {
         try {
